@@ -9,9 +9,6 @@ const { skipTutorial, addAndSaveNote } = require("./edit-note.screen");
      });
 
     it('Delete a note', async () =>{
-        //await skipTutorial();
-       // await addAndSaveNote('Title Calineeeeeeeeee','Calineeeeeeeeee\nBeaa\nLuna');
-       // driver.back();
         const note = await deleteNoteScreen.textTitle.getText();
         await deleteNoteScreen.title.click();
         await deleteNoteScreen.moreBtn.click();

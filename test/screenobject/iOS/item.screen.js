@@ -26,12 +26,10 @@ class ItemScreen{
     }
 
     getByAccessibilityId(name){
-        // await $(`~${name}`).click();
          return $(`~${name}`);
     }
 
 
 }
 
-//module.exports = new ItemScreen();
 export default new ItemScreen();

@@ -17,4 +17,5 @@ class ListSceren{
 
 }
 
-module.exports = new ListSceren();
+export default new ListSceren();
+//module.exports = new ListSceren();

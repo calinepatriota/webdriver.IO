@@ -11,6 +11,7 @@ jobs:
             node-version: 16.3.0
         - name: Install
           run: npm install
+          run: npm install dotenv
         - name: Test
           env:
             BROWSERSTACK_USER: ${{ secrets.BS_USER }}

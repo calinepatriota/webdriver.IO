@@ -26,5 +26,5 @@ class DeleteNoteScreen{
 
 }
 
-export default new DeleteNoteScreen();
-//module.exports = new DeleteNoteScreen();
+//export default new DeleteNoteScreen();
+module.exports = new DeleteNoteScreen();

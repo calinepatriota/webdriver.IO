@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^7.19.0",
-    "appium": "^1.22.2"
+    "appium": "^1.22.2",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@badisi/wdio-harness": "^1.0.3",
@@ -24,6 +25,7 @@
     "@wdio/spec-reporter": "^7.19.0",
     "chromedriver": "^99.0.0",
     "wdio-chromedriver-service": "^7.3.2",
-    "wdio-wait-for": "^2.2.4"
+    "wdio-wait-for": "^2.2.4",
+    "@wdio/browserstack-service": "^7.16.10"
   }
 }

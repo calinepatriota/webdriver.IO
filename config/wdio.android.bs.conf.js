@@ -11,7 +11,7 @@ config.key = process.env.BROWSERSTACK_ACCESS_KEY;
 // Specs
 // ============
 config.specs =[
- './test/specs/android/add-note-screen*.js'
+        './test/specs/android/delete-note-screen*.js'
  ];
 
 // ============

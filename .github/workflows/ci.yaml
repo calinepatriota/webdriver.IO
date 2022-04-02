@@ -21,3 +21,8 @@ jobs:
           with:
             name: logs
             path: logs
+        - name: Archive test results
+            uses: actions/upload-artifact@v3
+            with:
+            name: report test
+            path: output/test/report.html

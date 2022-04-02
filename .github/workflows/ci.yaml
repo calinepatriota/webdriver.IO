@@ -11,6 +11,7 @@ jobs:
             node-version: 16.3.0
         - name: Install
           run: npm install
+        - name: Install Allure
           run: npm install -g allure-commandline --save-dev
         - name: Test
           env:

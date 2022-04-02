@@ -23,8 +23,13 @@ jobs:
           with:
             name: logs
             path: logs
-        - name: Archive code coverage results
+        - name: Archive Test results
           uses: actions/upload-artifact@v3
           with:
-            name: code-coverage-report
+            name: Generate Allure Results
+            path: allure-results
+        - name: Archive Test report
+          uses: actions/upload-artifact@v3
+          with:
+            name: Generate Allure Report
             path: allure-report

@@ -12,7 +12,7 @@ config.key = process.env.BROWSERSTACK_ACCESS_KEY;
 // ============
 config.specs =[
        // './test/specs/android/delete-note-screen*.js'
-       'test/specs/**',
+       'test/specs/android/**',
  ];
 
 // ============

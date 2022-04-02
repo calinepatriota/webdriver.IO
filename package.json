@@ -32,7 +32,6 @@
     "wdio-wait-for": "^2.2.4",
     "@wdio/browserstack-service": "^7.16.10",
     "eslint": "7.32.0",
-    "eslint-plugin-wdio": "^7.4.2",
-    "@wdio/allure-reporter": "^5.0.0"
-  }
+    "eslint-plugin-wdio": "^7.4.2" 
+   }
 }

@@ -1,5 +1,6 @@
 require('dotenv').config()
 const {config} = require('./wdio.shared.conf');
+const execSync = require('child_process').execSync;
 
 // ============
 // Allure Report
@@ -36,6 +37,11 @@ config.specs =[
     "appium:autoGrantPermissions":true
             }
  ]
+
+  config.after= function (result, capabilities, specs) {
+        execSync('allure generate allure-results --clean');  // the default is 'buffer'  
+};
+
  config.services = ['browserstack'];
 
  exports.config = config;

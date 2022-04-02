@@ -11,6 +11,7 @@ jobs:
             node-version: 16.3.0
         - name: Install
           run: npm install
+          run: npm install -g allure-commandline --save-dev
         - name: Test
           env:
             BROWSERSTACK_USER: ${{ secrets.BS_USER }}
@@ -25,4 +26,4 @@ jobs:
           uses: actions/upload-artifact@v3
           with:
             name: code-coverage-report
-            path: test/code-coverage.html
+            path: allure-report/report.html

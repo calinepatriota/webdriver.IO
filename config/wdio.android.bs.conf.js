@@ -20,7 +20,7 @@ config.specs =[
  config.capabilities = [  
             {
     platformName: "Android",
-    "appium:deviceName":"Google Pixel 3",
+    "appium:deviceName":"Samsung Galaxy S22 Ultra",
     "appium:automationName": "UIAutomator2",
     "appium:app":"bs://fcb833944e78641318b2378b5c8e7f90f324f0cb",
     "appium:autoGrantPermissions":true

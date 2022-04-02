@@ -1,10 +1,11 @@
 const deleteNoteScreen = require("../../screenobject/android/delete-note.screen");
 const { skipTutorial, addAndSaveNote } = require("./edit-note.screen");
+const data = require('../../data/constants');
 
  describe('Delete notes', ()=>{
      before(async() =>{
         await skipTutorial();
-        await addAndSaveNote('Title Calineeeeeeeeee','Calineeeeeeeeee\nBeaa\nLuna');
+        await addAndSaveNote(data.noteTitle,data.noteDescription);
         driver.back();
      });
 

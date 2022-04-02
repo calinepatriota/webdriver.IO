@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^7.19.0",
-    "appium": "^1.22.2",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {

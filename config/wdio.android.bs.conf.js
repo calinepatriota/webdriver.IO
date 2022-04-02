@@ -4,11 +4,11 @@ const {config} = require('./wdio.shared.conf');
 // ============
 // Allure Report
 // ============
-config.reporters = [['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
-    }]],
+// config.reporters = [['allure', {
+//         outputDir: 'allure-results',
+//         disableWebdriverStepsReporting: true,
+//         disableWebdriverScreenshotsReporting: true,
+//     }]],
 
 // ============
 // Browserstack Credentials

@@ -2,6 +2,15 @@ require('dotenv').config()
 const {config} = require('./wdio.shared.conf');
 
 // ============
+// Allure Report
+// ============
+config.reporters = [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
+
+// ============
 // Browserstack Credentials
 // ============
 config.user = process.env.BROWSERSTACK_USERNAME;

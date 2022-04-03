@@ -26,10 +26,10 @@ jobs:
         - name: Archive Test results
           uses: actions/upload-artifact@v3
           with:
-            name: Generate Allure Results
+            name: allure-results
             path: allure-results
         - name: Archive Test report
           uses: actions/upload-artifact@v3
           with:
-            name: Generate Allure Report
+            name: allure-report
             path: allure-report

@@ -1,17 +1,18 @@
 const addNoteScreen = require("../../screenobject/android/add-note.screen");
+const commom_methods = require('../../utils/common_methods')
 
 class EditNoteScreen{
 
     async skipTutorial(){
-    await addNoteScreen.skipBtn.click();
-    await expect(addNoteScreen.addnoteText).toBeDisplayed();
+        commom_methods.click(addNoteScreen.skipBtn);
+        commom_methods.validateToBeDisplayed(addNoteScreen.addnoteText);
     }
 
     async addAndSaveNote(noteTite, noteSubtitle){
-        await addNoteScreen.addnoteText.click();
-        await addNoteScreen.text.click();
-        await expect(addNoteScreen.editingLabel).toBeDisplayed();
-        await addNoteScreen.editTitle.addValue(noteTite);
+        commom_methods.click(addNoteScreen.addnoteText);
+        commom_methods.click(addNoteScreen.text);
+        commom_methods.validateToBeDisplayed(addNoteScreen.editingLabel);
+        commom_methods.send_keys(addNoteScreen.editTitle, noteTite);
         await addNoteScreen.editNote.addValue(noteSubtitle);
         await addNoteScreen.saveNote();
     }

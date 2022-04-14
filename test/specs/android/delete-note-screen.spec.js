@@ -1,6 +1,7 @@
 const deleteNoteScreen = require("../../screenobject/android/delete-note.screen");
 const { skipTutorial, addAndSaveNote } = require("./edit-note.screen");
 const data = require('../../data/constants');
+const commom_methods = require('../../utils/common_methods')
 
  describe('Delete notes', ()=>{
      before(async() =>{
@@ -10,15 +11,17 @@ const data = require('../../data/constants');
      });
 
     it('Delete a note', async () =>{
-        const note = await deleteNoteScreen.textTitle.getText();
-        await deleteNoteScreen.title.click();
-        await deleteNoteScreen.moreBtn.click();
-        await deleteNoteScreen.deleteBtn.click();
-        await driver.acceptAlert();
-        await deleteNoteScreen.iconNav.click();
-        await deleteNoteScreen.trashBtn.click();
-        const noteTrash = await deleteNoteScreen.textTitle
-        await expect(noteTrash).toHaveText(note);
+        const note = commom_methods.getTextElement(deleteNoteScreen.textTitle);
+        commom_methods.click(deleteNoteScreen.title);
+        commom_methods.click(deleteNoteScreen.moreBtn);
+        await driver.pause(3000);
+        commom_methods.click(deleteNoteScreen.deleteBtn);
+        await driver.pause(3000);
+        commom_methods.acceptAlert();
+        commom_methods.click(deleteNoteScreen.iconNav);
+        await driver.pause(3000);
+        commom_methods.click(deleteNoteScreen.trashBtn);
+        await driver.pause(3000);
+        commom_methods.validateToHaveText(deleteNoteScreen.textTitle, note);        
     });
  });
-

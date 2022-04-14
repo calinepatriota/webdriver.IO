@@ -11,4 +11,3 @@ describe('Add notes', ()=>{
      await expect(addNoteScreen.viewNote).toHaveText(data.noteDescription);
      });
 });
-

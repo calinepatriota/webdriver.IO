@@ -33,7 +33,7 @@ config.specs =[
     platformName: "Android",
     "appium:deviceName":"Samsung Galaxy S22 Ultra",
     "appium:automationName": "UIAutomator2",
-    "appium:app":"bs://fcb833944e78641318b2378b5c8e7f90f324f0cb",
+    "appium:app":"bs://3784476dbb04f9323eb0efccf5f2ad6aa3d0c748",
     "appium:autoGrantPermissions":true
             }
  ]
